@@ -4,7 +4,7 @@ using Serilog.Events;
 
 namespace Serilog.Enrichers.OpenTracing
 {
-    public class OpenTracingLogEventEnricher : ILogEventEnricher
+    public class OpenTracingContextLogEventEnricher : ILogEventEnricher
     {
         public void Enrich(LogEvent logEvent, ILogEventPropertyFactory propertyFactory)
         {

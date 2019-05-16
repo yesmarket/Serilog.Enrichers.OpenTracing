@@ -5,12 +5,12 @@ namespace Serilog.Enrichers.OpenTracing
 {
     public static class LoggingExtensions
     {
-        public static LoggerConfiguration WithOpenTracing(this LoggerEnrichmentConfiguration enrich)
+        public static LoggerConfiguration WithOpenTracingContext(this LoggerEnrichmentConfiguration enrich)
         {
             if (enrich == null)
                 throw new ArgumentNullException(nameof(enrich));
 
-            return enrich.With<OpenTracingLogEventEnricher>();
+            return enrich.With<OpenTracingContextLogEventEnricher>();
         }
     }
 }
