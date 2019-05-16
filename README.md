@@ -5,12 +5,9 @@ Use this to enrich logs with OpenTracing context i.e. TraceId and SpanId.
 Configure serilog is as follows;
 ```json
 "serilog": {
-   "minimumLevel": { /* ... */ }
-   },
-   "writeTo": [
-      { /* ... */ }
-   ],
-   "enrich": [ /* ... , */ "WithOpenTracingContext" ]
+   "minimumLevel": { },
+   "writeTo": [ ],
+   "enrich": [ "WithOpenTracingContext" ]
 }
 ```
 
